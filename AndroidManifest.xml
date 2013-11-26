@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.justmoon.glass.bitcoin.price"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_lap"
+        android:label="@string/app_name" >
+
+        <activity
+            android:name="com.justmoon.glass.bitcoin.price.MenuActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MenuTheme"
+            android:enabled="true" >
+        </activity>
+
+        <service
+            android:name="com.justmoon.glass.bitcoin.price.BitcoinPriceService"
+            android:icon="@drawable/ic_lap"
+            android:label="@string/app_name"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger_start" />
+        </service>
+    </application>
+
+</manifest>

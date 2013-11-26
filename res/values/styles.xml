@@ -1,0 +1,34 @@
+<resources>
+
+    <style name="CurrencyComponent">
+        <item name="android:layout_width">640px</item>
+        <item name="android:layout_height">60px</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">40px</item>
+    </style>
+
+    <style name="PriceComponent">
+        <item name="android:layout_width">640px</item>
+        <item name="android:layout_height">140px</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">120px</item>
+    </style>
+
+    <style name="SourceComponent">
+        <item name="android:layout_width">640px</item>
+        <item name="android:layout_height">60px</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">40px</item>
+    </style>
+
+    <style name="MenuTheme" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+</resources>
